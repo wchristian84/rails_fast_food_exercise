@@ -1,0 +1,22 @@
+<h1>Multiple Choice</h1>
+<%= form_with url: "./open-ended-feedback", method: :get do |form| %>
+<p>How would you rate the quality of your meal?</p>
+<%= select_tag(:quality, options_for_select([
+    ["Very Good", 5],
+    ["Mostly Good", 4],
+    ["Okay", 3],
+    ["Not Very Good", 2],
+    ["Very Bad", 1]
+    ]))%>
+<p>How likely are you to recommend us to a friend?</p>
+<%= select_tag(:recommendation, options_for_select([
+    ["Very Likely", 5],
+    ["Likely", 4],
+    ["Undecided", 3],
+    ["Not Very Likely", 2],
+    ["Highly Unikely", 1],
+]))%>
+<br>
+<br>
+<%= form.submit "Submit"%>
+<% end %>

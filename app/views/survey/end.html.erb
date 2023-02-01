@@ -1,0 +1,13 @@
+<h1>Review Your Responses</h1>
+
+<b><p>Please rate your experience from 1 (very poor) to 10 (excellent):</p></b>
+<%= session[:rating] %>
+<hr>
+<b><p>How would you rate the quality of your meal?</p></b>
+<%= @quality %><br>
+<hr>
+<b><p>How likely are you to recommend us to a friend?</p></b>
+<%= @recommendation %><br>
+<hr>
+<b><p>Do you have any other comments you'd like to share?</p></b>
+<%= session[:open_ended] %>

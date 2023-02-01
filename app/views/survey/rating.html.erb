@@ -1,0 +1,17 @@
+<h1>Rating</h1>
+<p>Please rate your experience from 1 (very poor) to 10 (excellent):</p>
+<%= form_with url: "./multiple-choice-questions", method: :get do |form| %>
+<%= select_tag(:rating, options_for_select([
+    ["1", 1],
+    ["2", 2],
+    ["3", 3],
+    ["4", 4],
+    ["5", 5],
+    ["6", 6],
+    ["7", 7],
+    ["8", 8],
+    ["9", 9],
+    ["10", 10]
+    ]))%>
+<%= form.submit "Submit" %>
+<% end %>

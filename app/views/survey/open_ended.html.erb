@@ -1,0 +1,6 @@
+<h1>Open Ended</h1>
+<p>Do you have any other comments you'd like to share?</p>
+<%= form_with url: "../end", method: :get do |form| %>
+<%= text_area_tag(:open_ended) %>
+<%= form.submit "Submit" %>
+<% end %>
